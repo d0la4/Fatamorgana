@@ -228,9 +228,9 @@ GameObject:
   - component: {fileID: 449117185}
   - component: {fileID: 449117184}
   - component: {fileID: 449117183}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wall_test (1)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -600,7 +600,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1310740853}
-  m_LocalRotation: {x: 0.5183596, y: -0.0000000073571282, z: 0.000000004459547, w: 0.85516274}
+  m_LocalRotation: {x: 0.5183596, y: 0.00000000735713, z: -0.000000004459548, w: 0.85516274}
   m_LocalPosition: {x: 0, y: 14.91, z: -7.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -826,7 +826,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467067514}
-  m_LocalRotation: {x: 0.5183596, y: -0.0000000073571282, z: 0.000000004459547, w: 0.85516274}
+  m_LocalRotation: {x: 0.5183596, y: 0.00000000735713, z: -0.000000004459548, w: 0.85516274}
   m_LocalPosition: {x: 0, y: 14.91, z: -7.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -895,7 +895,7 @@ GameObject:
   - component: {fileID: 1669573164}
   m_Layer: 7
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1183,9 +1183,9 @@ GameObject:
   - component: {fileID: 1886369316}
   - component: {fileID: 1886369315}
   - component: {fileID: 1886369314}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wall_test
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
@@ -1278,9 +1278,9 @@ GameObject:
   - component: {fileID: 2046600930}
   - component: {fileID: 2046600929}
   - component: {fileID: 2046600928}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: wall_test (2)
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295

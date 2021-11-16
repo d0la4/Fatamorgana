@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, enemyLayer))
+            /*if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, enemyLayer))
             {
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
                 Debug.Log("Did Hit");
@@ -38,6 +38,23 @@ public class Movement : MonoBehaviour
             else
             {
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+                Debug.Log("Did not Hit");
+            }*/
+
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity))
+            {
+                if(hit.collider.tag == "Enemy")
+                {
+                    Debug.Log("Did Hit Enemy");
+                }
+                else if(hit.collider.tag == "Obstacle")
+                {
+                    Debug.Log("Did Hit Obstacle");
+                }
+
+            }
+            else
+            {
                 Debug.Log("Did not Hit");
             }
         }
@@ -54,6 +71,8 @@ public class Movement : MonoBehaviour
             }
 
             //draw line
+
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hitDist, Color.yellow);
         }
 
         else if(direction.magnitude >= 0.1f)
